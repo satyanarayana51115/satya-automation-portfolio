@@ -103,36 +103,33 @@ export default function App() {
         </div>
       </nav>
 
-      {/* Hero Section - Perfectly Scaled for Mobile & Desktop */}
-      {/* Hero Section - Centered 3-Line on Mobile & Original Left on Desktop */}
-      {/* Hero Section - Perfectly Padded Mobile View */}
-      {/* Hero Section - Clean 2-Line Layout with Extended Spacing */}
-      <section className="pt-12 pb-28 sm:py-24 px-4 sm:px-6 max-w-6xl mx-auto border-b border-emerald-950/50 min-h-[calc(100vh-4rem)] flex flex-col justify-center">
+      {/* ================= HERO SECTION START ================= */}
+      <section className="pt-28 pb-16 sm:py-24 px-4 sm:px-6 max-w-6xl mx-auto border-b border-emerald-950/50 flex flex-col justify-start sm:justify-center">
         
         {/* Top Badge */}
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono mb-8 shadow-[0_0_12px_rgba(16,185,129,0.15)] w-fit">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-[10.5px] sm:text-xs font-mono mb-6 shadow-[0_0_12px_rgba(16,185,129,0.15)] w-fit">
           <Sparkles className="w-3.5 h-3.5" />
           AVAILABLE FOR HIGH-IMPACT AUTOMATION CONTRACTS
         </div>
         
-        {/* 2 Lines: & at line 1, no period at line 2 */}
-        <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-[5rem] font-normal text-white tracking-tight leading-[1.2] lg:leading-[1.1] mb-8">
+        {/* Heading: Balanced 2 Lines on Mobile */}
+        <h1 className="text-[1.75rem] leading-[1.25] sm:text-5xl md:text-6xl lg:text-[5rem] font-normal text-white tracking-tight sm:leading-[1.15] mb-6">
           <span className="block">Deterministic Automation &amp;</span>
           <span className="text-[#10b981] block">
             Autonomous Agentic Systems
           </span>
         </h1>
 
-        {/* Supporting Paragraph with extra space below */}
-        <p className="text-sm sm:text-lg lg:text-xl text-slate-400 max-w-3xl leading-relaxed mb-12">
+        {/* Description */}
+        <p className="text-sm sm:text-lg lg:text-xl text-slate-400 max-w-3xl leading-relaxed mb-8">
           I build resilient browser automation pipelines and LLM multi-agent swarms that eliminate manual operational drag and scale mission-critical enterprise workflows.
         </p>
 
-        {/* Action Buttons */}
-        <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+        {/* Buttons */}
+        <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 sm:gap-4">
           <a 
             href="#projects" 
-            className="px-6 py-3.5 bg-emerald-500/10 border border-emerald-500/40 hover:bg-emerald-500/20 text-emerald-400 font-semibold rounded-lg transition flex items-center justify-center gap-2 shadow-[0_0_15px_rgba(16,185,129,0.1)] hover:shadow-[0_0_20px_rgba(16,185,129,0.2)] text-base cursor-pointer"
+            className="px-6 py-3.5 bg-emerald-500/10 border border-emerald-500/40 hover:bg-emerald-500/20 text-emerald-400 font-semibold rounded-lg transition flex items-center justify-center gap-2 shadow-[0_0_15px_rgba(16,185,129,0.1)] hover:shadow-[0_0_20px_rgba(16,185,129,0.2)] text-sm sm:text-base cursor-pointer"
           >
             View Case Studies <ArrowUpRight className="w-4 h-4 text-emerald-400" />
           </a>
@@ -140,12 +137,13 @@ export default function App() {
             href="https://github.com/satyanarayana51115" 
             target="_blank" 
             rel="noreferrer" 
-            className="px-6 py-3.5 bg-[#081812] border border-emerald-950 hover:border-slate-700 text-slate-300 font-medium rounded-lg transition flex items-center justify-center gap-2 hover:text-white text-base cursor-pointer"
+            className="px-6 py-3.5 bg-[#081812] border border-emerald-950 hover:border-slate-700 text-slate-300 font-medium rounded-lg transition flex items-center justify-center gap-2 hover:text-white text-sm sm:text-base cursor-pointer"
           >
             <GithubIcon className="w-4 h-4 text-slate-400" /> GitHub Repos
           </a>
         </div>
       </section>
+      {/* ================= HERO SECTION END ================= */}
 
       {/* Projects Grid */}
       <section id="projects" className="py-14 sm:py-24 px-4 sm:px-6 max-w-6xl mx-auto border-b border-emerald-950/50">
