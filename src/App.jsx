@@ -432,7 +432,7 @@ export default function App() {
             <a href="https://github.com/satyanarayana51115" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-emerald-400 transition">
               <GithubIcon className="w-4 h-4" />
             </a>
-            <a href="https://www.linkedin.com/in/satyanarayana" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-emerald-400 transition">
+            <a href="https://www.linkedin.com/in/manepalli-satyanarayana-a931382b9/" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-emerald-400 transition">
               <LinkedinIcon className="w-4 h-4" />
             </a>
             <a href="mailto:contact@satyanarayana.eng" className="text-slate-400 hover:text-emerald-400 transition">
