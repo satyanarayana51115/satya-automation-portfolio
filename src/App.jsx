@@ -407,7 +407,7 @@ export default function App() {
            <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5 w-full sm:w-auto">
             {/* 1. Send Email Button (Green Text + Green Border + Bright Green Glow on Hover) */}
             <a 
-              href="mailto:contact@satyanarayana.eng" 
+              href="mailto:satyanarayana51115@gmail.com" 
               className="w-full sm:w-auto px-6 py-3.5 bg-[#020b08] border border-emerald-500/40 hover:border-emerald-400 text-emerald-400 hover:text-emerald-300 font-medium rounded-xl transition-all duration-300 flex items-center justify-center gap-2 shadow-[0_0_10px_rgba(16,185,129,0.10)] hover:shadow-[0_0_22px_rgba(16,185,129,0.35)] text-xs sm:text-sm cursor-pointer"
             >
               <Mail className="w-4 h-4 text-emerald-400 group-hover:text-emerald-300" /> Send Email Directly
@@ -415,7 +415,7 @@ export default function App() {
 
             {/* 2. LinkedIn Button (White Text + White Border + Bright White Glow on Hover) */}
             <a 
-              href="https://www.linkedin.com/in/satyanarayana" 
+              href="https://www.linkedin.com/in/manepalli-satyanarayana-a931382b9/" 
               target="_blank" 
               rel="noreferrer" 
               className="w-full sm:w-auto px-6 py-3.5 bg-[#020b08] border border-white/30 hover:border-white text-slate-100 hover:text-white font-medium rounded-xl transition-all duration-300 flex items-center justify-center gap-2 shadow-[0_0_10px_rgba(255,255,255,0.05)] hover:shadow-[0_0_20px_rgba(255,255,255,0.25)] text-xs sm:text-sm cursor-pointer"
