@@ -435,7 +435,7 @@ export default function App() {
             <a href="https://www.linkedin.com/in/manepalli-satyanarayana-a931382b9/" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-emerald-400 transition">
               <LinkedinIcon className="w-4 h-4" />
             </a>
-            <a href="mailto:contact@satyanarayana.eng" className="text-slate-400 hover:text-emerald-400 transition">
+            <a href="mailto:satyanarayana@gmail.com" className="text-slate-400 hover:text-emerald-400 transition">
               <Mail className="w-4 h-4" />
             </a>
           </div>
