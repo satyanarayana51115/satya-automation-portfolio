@@ -407,7 +407,9 @@ export default function App() {
            <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5 w-full sm:w-auto">
             {/* 1. Send Email Button (Green Text + Green Border + Bright Green Glow on Hover) */}
             <a 
-              href="mailto:satyanarayana51115@gmail.com" 
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=satyanarayana51115@gmail.com"
+              target="_blank"
+              rel="noreferrer" 
               className="w-full sm:w-auto px-6 py-3.5 bg-[#020b08] border border-emerald-500/40 hover:border-emerald-400 text-emerald-400 hover:text-emerald-300 font-medium rounded-xl transition-all duration-300 flex items-center justify-center gap-2 shadow-[0_0_10px_rgba(16,185,129,0.10)] hover:shadow-[0_0_22px_rgba(16,185,129,0.35)] text-xs sm:text-sm cursor-pointer"
             >
               <Mail className="w-4 h-4 text-emerald-400 group-hover:text-emerald-300" /> Send Email Directly
