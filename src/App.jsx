@@ -416,10 +416,12 @@ export default function App() {
             {/* 1. Send Email Button (Green Text + Green Border + Bright Green Glow on Hover) */}
             <button
               onClick={handleCopyEmail}
-              className="w-full sm:w-auto px-6 py-3.5 bg-[#020b08] border border-emerald-500/40 hover:border-emerald-400 text-emerald-400 hover:text-emerald-300 transition flex items-center justify-center gap-2 rounded-xl text-sm font-medium leading-none"
+              className="w-full sm:w-auto px-6 py-3.5 bg-[#020b08] border border-emerald-500/40 hover:border-emerald-400 text-emerald-400 hover:text-emerald-300 transition flex items-center justify-center gap-2 text-slate-100 group"
             >
               <Mail className="w-4 h-4 text-emerald-400 group-hover:text-emerald-300" />
+              <span className="text-emerald-400 hover:text-emerald-300">
               {copied ? "Email Copied! ✓" : "Copy Email to Contact"}
+              </span>
             </button>
 
             {/* 2. LinkedIn Button (White Text + White Border + Bright White Glow on Hover) */}
