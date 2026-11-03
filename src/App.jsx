@@ -32,6 +32,14 @@ function LinkedinIcon({ className = "w-4 h-4" }) {
 export default function App() {
   const [hoursWasted, setHoursWasted] = useState(15);
   const [hourlyCost, setHourlyCost] = useState(40);
+  const [copied, setCopied] = useState(false);
+
+  const handleCopyEmail = (e) => {
+    e.preventDefault();
+    navigator.clipboard.writeText("satyanarayana51115@gmail.com");
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2500);
+  };
 
   const annualHoursSaved = hoursWasted * 50;
   const annualSavings = annualHoursSaved * hourlyCost;
@@ -406,14 +414,13 @@ export default function App() {
 
            <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5 w-full sm:w-auto">
             {/* 1. Send Email Button (Green Text + Green Border + Bright Green Glow on Hover) */}
-            <a 
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=satyanarayana51115@gmail.com"
-              target="_blank"
-              rel="noreferrer" 
-              className="w-full sm:w-auto px-6 py-3.5 bg-[#020b08] border border-emerald-500/40 hover:border-emerald-400 text-emerald-400 hover:text-emerald-300 font-medium rounded-xl transition-all duration-300 flex items-center justify-center gap-2 shadow-[0_0_10px_rgba(16,185,129,0.10)] hover:shadow-[0_0_22px_rgba(16,185,129,0.35)] text-xs sm:text-sm cursor-pointer"
+            <button
+              onClick={handleCopyEmail}
+              className="w-full sm:w-auto px-6 py-3.5 bg-[#020b08] border border-emerald-500/40 hover:border-emerald-400 text-emerald-400 hover:text-emerald-300 transition flex items-center justify-center gap-2 rounded-lg"
             >
-              <Mail className="w-4 h-4 text-emerald-400 group-hover:text-emerald-300" /> Send Email Directly
-            </a>
+              <Mail className="w-4 h-4 text-emerald-400 group-hover:text-emerald-300" />
+              {copied ? "Email Copied! ✓" : "Copy Email to Contact"}
+            </button>
 
             {/* 2. LinkedIn Button (White Text + White Border + Bright White Glow on Hover) */}
             <a 
@@ -437,9 +444,13 @@ export default function App() {
             <a href="https://www.linkedin.com/in/manepalli-satyanarayana-a931382b9/" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-emerald-400 transition">
               <LinkedinIcon className="w-4 h-4" />
             </a>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=satyanarayana51115@gmail.com" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-emerald-400 transition">
+            <button 
+              onClick={handleCopyEmail} 
+              title="Copy email address" 
+              className="text-slate-400 hover:text-emerald-400 transition"
+              >
               <Mail className="w-4 h-4" />
-            </a>
+            </button>
           </div>
           
           <p className="text-xs text-slate-400 font-mono tracking-wider">
