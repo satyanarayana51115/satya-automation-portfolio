@@ -39,6 +39,7 @@ export default function App() {
     navigator.clipboard.writeText("satyanarayana51115@gmail.com");
     setCopied(true);
     setTimeout(() => setCopied(false), 2500);
+    window.location.href = "mailto:satyanarayana51115@gmail.com";
   };
 
   const annualHoursSaved = hoursWasted * 50;
@@ -416,7 +417,7 @@ export default function App() {
             {/* 1. Send Email Button (Green Text + Green Border + Bright Green Glow on Hover) */}
             <button
               onClick={handleCopyEmail}
-              className="w-full sm:w-auto px-6 py-3.5 bg-[#020b08] border border-emerald-500/40 hover:border-emerald-400 text-emerald-400 hover:text-emerald-300 font-medium rounded-xl transition flex items-center justify-center gap-2 group"
+              className="w-full sm:w-auto px-6 py-3.5 bg-[#020b08] border border-emerald-500/40 hover:border-emerald-400 text-sm text-emerald-400 hover:text-emerald-300 font-medium rounded-xl transition flex items-center justify-center gap-2 group"
             >
               <Mail className="w-4 h-4 text-emerald-400 group-hover:text-emerald-300" />
               <span>{copied ? "Email Copied! ✓" : "Copy Email to Contact"}</span>
@@ -427,7 +428,7 @@ export default function App() {
               href="https://www.linkedin.com/in/manepalli-satyanarayana-a931382b9/" 
               target="_blank" 
               rel="noreferrer" 
-              className="w-full sm:w-auto px-6 py-3.5 bg-[#020b08] border border-white/30 hover:border-white text-slate-100 hover:text-white font-medium rounded-xl transition-all duration-300 flex items-center justify-center gap-2 shadow-[0_0_10px_rgba(255,255,255,0.05)] hover:shadow-[0_0_20px_rgba(255,255,255,0.25)] text-xs sm:text-sm cursor-pointer"
+              className="w-full sm:w-auto px-6 py-3.5 bg-[#020b08] border border-white/30 hover:border-white text-sm text-slate-100 hover:text-white font-medium rounded-xl transition-all duration-300 flex items-center justify-center gap-2 shadow-[0_0_10px_rgba(255,255,255,0.05)] hover:shadow-[0_0_20px_rgba(255,255,255,0.25)] text-xs sm:text-sm cursor-pointer"
             >
               <LinkedinIcon className="w-4 h-4 text-slate-200 group-hover:text-white" /> Connect on LinkedIn
             </a>
